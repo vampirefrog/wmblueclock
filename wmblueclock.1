@@ -1,0 +1,49 @@
+.TH "WMBlueClock" "1" "0.4" "Mihai Draghicioiu" "Dockapps"
+.SH "NAME"
+\fBWMBlueClock\fP
+.SH "SYNOPSIS"
+wmblueclock [options]
+.SH "DESCRIPTION"
+.PP 
+\fBWMBlueClock\fP dockapp which displays time. It runs either as a dockapp or a normal window. It displays hour, minute, second, day of month, and number of month. It can run in 12 and 24 hour mode.
+.SH "OPTIONS"
+\fBWMBlueClock\fP accepts the following command\-line options:
+.TP 
+.B \-h,  \-\-help
+display basic usage info and exit.
+.TP 
+.B \-v,  \-\-version
+display version and exit.
+.TP 
+.B \-display <dpy>
+Specify the X11 display to connect to
+.TP 
+.B \-m,  \-\-milisecs <ms>
+Number of miliseconds between updates
+.TP 
+.B \-w,  \-\-window
+Run in a window
+.TP 
+.B \-nw, \-\-no\-window
+Don't run in a window
+.TP 
+.B \-s,  \-\-shape
+Use the XShape extension
+.TP 
+.B \-ns, \-\-no\-shape
+Don't use the XShape extension
+.TP 
+.B \-b,  \-\-bgcolor  <col> 
+Specify the background color
+.TP 
+.B \-f,  \-\-offcolor <col>
+Specify the color for off leds
+.TP 
+.B \-o,  \-\-oncolor  <col>
+Specify the color for text and on leds
+.TP 
+.B \-12,  \-\-ampm
+Use 12 hour mode
+
+.SH "AUTHOR"
+Mihai Draghicioiu <mihai.draghicioiu@gmail.com>

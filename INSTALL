@@ -1,0 +1,8 @@
+Edit the Makefile to set the installation directory and run:
+
+	$ make
+	$ su -c 'make install'
+
+To uninstall do:
+
+	$ su -c 'make uninstall'

@@ -20,6 +20,7 @@ CFLAGS=-O2 -Wall -DVERSION=\"$(VERSION)\"
 CC=gcc
 RM=rm -rf
 INST=install
+MKDIR_P=mkdir -p
 
 ifeq ($(USE_XFT),yes)
 CFLAGS += -DUSE_XFT $(shell pkg-config xft --cflags)
@@ -37,6 +38,7 @@ clean:
 	$(RM) *.o $(PROG) *~ *.bak *.BAK .xvpics
 install: $(PROG) $(MANUAL)
 	$(INST) -m 755 $(PROG) $(BINDIR)
+	$(MKDIR_P) $(MANDIR)
 	$(INST) -m 644 $(MANUAL) $(MANDIR)
 uninstall:
 	$(RM) $(BINDIR)/$(PROG)
